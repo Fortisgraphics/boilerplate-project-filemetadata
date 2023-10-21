@@ -1,10 +1,10 @@
 /****** Main Styling ******/
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #222;
-  background-color: #ECF0F1;
+  background-color: lavenderblush;
   text-align: center;
 }
 
@@ -18,7 +18,14 @@ body {
 }
 
 a {
-  color: #2574A9;
+  color: darkslateblue;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: cornflowerblue;
+  transition: color 0.3s linear;
 }
 
 input {
@@ -32,11 +39,54 @@ input#button {
 }
 
 .view {
-  position:relative;
+  position: relative;
   margin: auto;
   margin-top: 40px;
-  border: 1px  solid  #aaa;
+  border: 2px solid #aaa;
+  border-radius: 5px;
   padding: 20px;
   width: 60%;
   min-width: 400px;
+}
+
+input {
+  padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(6, 165, 4);
+}
+
+input[type="file"]::-webkit-file-upload-button,
+input[type="file"]::file-selector-button {
+  color: white;
+  background-color: rgb(6, 165, 4);
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  color: indigo;
+}
+
+#button {
+  color: white;
+  background-color: rgb(6, 165, 4);
+  border-radius: 6px;
+  border: none;
+
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+#button:hover,
+input[type="file"]::-webkit-file-upload-button:hover,
+input[type="file"]::file-selector-button:hover {
+  background-color: rgb(4, 90, 3);
+  transition: background-color 0.3s ease-in;
+  cursor: pointer;
 }
